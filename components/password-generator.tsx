@@ -166,6 +166,9 @@ export default function GeneratePassword() {
             </div>
           </div>
         </div>
+        <div className="mt-6 text-center text-gray-500 dark:text-gray-400 text-sm">
+          © 2025 Emmanuel Ronoh. All rights reserved.
+        </div>
       </Card>
     </div>
   );
