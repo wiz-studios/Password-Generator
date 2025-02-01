@@ -82,7 +82,7 @@ export default function GeneratePassword() {
 
   // JSX return statement rendering the password generator UI
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 p-4 sm:p-6 lg:p-8">
       {/* Center the password generator card within the screen */}
       <Card className="w-full max-w-md p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
         <div className="mx-auto max-w-md space-y-6">
@@ -151,7 +151,7 @@ export default function GeneratePassword() {
             {/* Display the generated password and button to copy */}
             <div className="space-y-2">
               <Label htmlFor="password">Generated Password</Label>
-              <div className="flex items-center space-x-2">
+              <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2">
                 <Input
                   id="password"
                   type="text"
