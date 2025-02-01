@@ -82,7 +82,7 @@ export default function GeneratePassword() {
 
   // JSX return statement rendering the password generator UI
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 p-4 sm:p-6 lg:p-8">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 px-4">
       {/* Center the password generator card within the screen */}
       <Card className="w-full max-w-md p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
         <div className="mx-auto max-w-md space-y-6">
@@ -111,47 +111,49 @@ export default function GeneratePassword() {
             {/* Checkboxes for character type inclusion */}
             <div className="space-y-2">
               <Label>Include:</Label>
-              <div className="flex items-center space-x-2">
-                <Checkbox
-                  id="uppercase"
-                  checked={includeUppercase}
-                  onCheckedChange={handleCheckboxChange(setIncludeUppercase)}
-                />
-                <Label htmlFor="uppercase">Uppercase Letters</Label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Checkbox
-                  id="lowercase"
-                  checked={includeLowercase}
-                  onCheckedChange={handleCheckboxChange(setIncludeLowercase)}
-                />
-                <Label htmlFor="lowercase">Lowercase Letters</Label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Checkbox
-                  id="numbers"
-                  checked={includeNumbers}
-                  onCheckedChange={handleCheckboxChange(setIncludeNumbers)}
-                />
-                <Label htmlFor="numbers">Numbers</Label>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Checkbox
-                  id="symbols"
-                  checked={includeSymbols}
-                  onCheckedChange={handleCheckboxChange(setIncludeSymbols)}
-                />
-                <Label htmlFor="symbols">Symbols</Label>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2">
+                  <Checkbox
+                    id="uppercase"
+                    checked={includeUppercase}
+                    onCheckedChange={handleCheckboxChange(setIncludeUppercase)}
+                  />
+                  <Label htmlFor="uppercase">Uppercase Letters</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox
+                    id="lowercase"
+                    checked={includeLowercase}
+                    onCheckedChange={handleCheckboxChange(setIncludeLowercase)}
+                  />
+                  <Label htmlFor="lowercase">Lowercase Letters</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox
+                    id="numbers"
+                    checked={includeNumbers}
+                    onCheckedChange={handleCheckboxChange(setIncludeNumbers)}
+                  />
+                  <Label htmlFor="numbers">Numbers</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox
+                    id="symbols"
+                    checked={includeSymbols}
+                    onCheckedChange={handleCheckboxChange(setIncludeSymbols)}
+                  />
+                  <Label htmlFor="symbols">Symbols</Label>
+                </div>
               </div>
             </div>
             {/* Button to generate password */}
-            <Button type="button" className="w-full" onClick={generatePassword}>
+            <Button type="button" className="w-full py-2" onClick={generatePassword}>
               Generate Password
             </Button>
             {/* Display the generated password and button to copy */}
             <div className="space-y-2">
               <Label htmlFor="password">Generated Password</Label>
-              <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2">
+              <div className="flex items-center space-x-2">
                 <Input
                   id="password"
                   type="text"
@@ -167,8 +169,9 @@ export default function GeneratePassword() {
           </div>
         </div>
         <div className="mt-6 text-center text-gray-500 dark:text-gray-400 text-sm">
-          © 2025 Emmanuel Ronoh. All rights reserved.
-        </div>
+  © 2025 <a href="https://ronoh-portfolio-14.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Emmanuel Ronoh</a>. All rights reserved.
+</div>
+
       </Card>
     </div>
   );
