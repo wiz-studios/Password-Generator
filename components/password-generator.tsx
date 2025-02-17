@@ -169,7 +169,7 @@ export default function GeneratePassword() {
           </div>
         </div>
         <div className="mt-6 text-center text-gray-500 dark:text-gray-400 text-sm">
-  © 2025 <a href="https://ronoh-portfolio-14.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Emmanuel Ronoh</a>. All rights reserved.
+  © 2025 <a href="https://ronoh-portfolio-14.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Wiz Dev Studios</a>. All rights reserved.
 </div>
 
       </Card>
